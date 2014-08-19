@@ -1,3 +1,9 @@
+/**
+* BalancoTrimestral
+*
+* @version v 0.1 Agosto/2014
+* @author CARVALHO, Emiliano
+*/
 package Exercicio1;
 
 public class BalancoTrimestral {

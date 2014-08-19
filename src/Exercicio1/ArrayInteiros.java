@@ -1,3 +1,9 @@
+/**
+* ArrayInteiros
+*
+* @version v 0.1 Agosto/2014
+* @author CARVALHO, Emiliano
+*/
 package Exercicio1;
 
 public class ArrayInteiros {
@@ -19,7 +25,7 @@ public class ArrayInteiros {
     
     public void mostre() {
 	for (int i = 0; i < number.length; i++) {
-	    System.out.println("Número " + i + " é = " + number[i]);
+	    System.out.println("N�mero " + i + " � = " + number[i]);
 	}
     }
 }
