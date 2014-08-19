@@ -25,7 +25,7 @@ public class ArrayInteiros {
     
     public void mostre() {
 	for (int i = 0; i < number.length; i++) {
-	    System.out.println("N�mero " + i + " � = " + number[i]);
+	    System.out.println("Numero " + i + " eh = " + number[i]);
 	}
     }
 }
