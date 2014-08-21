@@ -7,8 +7,8 @@
 package Exercicio1;
 
 public class ArrayInteiros {
-    private int [] number;
-    private int tam;
+    protected int [] number;
+    protected int tam;
     
     public ArrayInteiros() {
 	tam = 0;

@@ -9,9 +9,9 @@ package Exercicio1;
 import java.util.Scanner;
 
 public class Menu {
-        
+
     public static void menu() {
-			
+	System.console();		
 	System.out.println("\nExercicios Java");
 
 	/* menu */
@@ -20,18 +20,19 @@ public class Menu {
 	System.out.println("2 - Soma 2 valores");
 	System.out.println("3 - Balanco Trimestral");
 	System.out.println("4 - Array 5 numeros");
-	System.out.println("5 - Calculadora");
+	System.out.println("5 - Array 10 numeros inversa");
+	System.out.println("6 - Calculadora");
 	System.out.println("\n0 - Sair");
-	
+
     }
-    
+
     public static void main(String[] args) {
 	int opcao = 999;
 
 	while (opcao != 0) {
-	    
+
 	    menu();
-	    
+
 	    Scanner sc = new Scanner(System.in);
 	    opcao = sc.nextInt();
 
@@ -81,30 +82,88 @@ public class Menu {
 		valores.mostre();
 		break;
 	    case 5:
-		System.out.println("MENU DE OPCOES");
-		System.out.println("1 - Somar");
-		System.out.println("2 - Subtrair");
-		System.out.println("3 - Multiplicar");
-		System.out.println("4 - Dividir");
+		/* Array 10 números inteiros */
+		System.out.println("\n3 - Array 10 numeros em ordem inversa");
+		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||");
 
-		opcao = sc.nextInt();
+		OrdemInversa inversa = new OrdemInversa(10);
+		
+		for (int i = 0; i < 10; i++) {
+		    inversa.setNumber(i*2);		    
+		}
+		
+		inversa.mostre();
+		break;
+		
+	    case 6:
+		
+		Calculadora calc = new Calculadora();
+		int opc = 999;
+		
+		while (opc != 0) {
 
-		switch (opcao) {
-		case 1:
-		    Calculadora calc = new Calculadora();
+		    System.out.println("\nCALCULADORA - MENU DE OPCOES");
+		    System.out.println("1 - Somar");
+		    System.out.println("2 - Subtrair");
+		    System.out.println("3 - Multiplicar");
+		    System.out.println("4 - Dividir");
+		    System.out.println("0 - Sair");
 
-		    System.out.println("SOMA");
-		    System.out.println("Digite o primeiro valor: ");
-		    int val1 = sc.nextInt();
+		    opc = sc.nextInt();
+		    int val1, val2;
+		    switch (opc) {
+		    case 1:
 
-		    System.out.println("Digite o segundo valor: ");
-		    int val2 = sc.nextInt();
+			System.out.println("\nSOMAR");
+			System.out.println("Digite o primeiro valor: ");
+			val1 = sc.nextInt();
 
-		    System.out.println("Resultado: " + calc.somar(val1, val2));
-		    break;
+			System.out.println("Digite o segundo valor: ");
+			val2 = sc.nextInt();
 
-		default:
-		    break;
+			System.out.println("Resultado: " + calc.somar(val1, val2));
+			break;
+
+		    case 2:
+
+			System.out.println("\nSUBTRAIR");
+			System.out.println("Digite o primeiro valor: ");
+			val1 = sc.nextInt();
+
+			System.out.println("Digite o segundo valor: ");
+			val2 = sc.nextInt();
+
+			System.out.println("Resultado: " + calc.subtrair(val1, val2));
+			break;
+		    case 3:
+
+			System.out.println("\nMULTIPLICAR");
+			System.out.println("Digite o primeiro valor: ");
+			val1 = sc.nextInt();
+
+			System.out.println("Digite o segundo valor: ");
+			val2 = sc.nextInt();
+
+			System.out.println("Resultado: " + calc.multiplicar(val1, val2));
+			break;
+		    case 4:
+
+			System.out.println("\nDIVIDIR");
+			System.out.println("Digite o primeiro valor: ");
+			val1 = sc.nextInt();
+
+			System.out.println("Digite o segundo valor: ");
+			val2 = sc.nextInt();
+
+			System.out.println("Resultado: " + calc.dividir(val1, val2));
+			break;
+
+		    case 0:
+			System.out.println("\nFIM - CALCULADORA");
+			opc = 0;
+			break;
+		    }
+
 		}
 
 		break;
