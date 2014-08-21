@@ -26,7 +26,7 @@ public class ArrayConsoantes {
     public void mostre() {
 	int cont = 0;
 	String consoantes = "";
-	System.out.println("CONSOATES");
+	System.out.println("CONSOANTES");
 	for (int i = 0; i < vetor.length; i++) {
 	    char letra = vetor[i];
 	    if (letra != 'a' && letra != 'e' && letra != 'i' && letra != 'o' && letra != 'u') {
