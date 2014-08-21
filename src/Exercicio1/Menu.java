@@ -21,7 +21,8 @@ public class Menu {
 	System.out.println("3 - Balanco Trimestral");
 	System.out.println("4 - Array 5 numeros");
 	System.out.println("5 - Array 10 numeros inversa");
-	System.out.println("6 - Calculadora");
+	System.out.println("6 - Imprimir Consoantes");
+	System.out.println("7 - Calculadora");
 	System.out.println("\n0 - Sair");
 
     }
@@ -96,6 +97,26 @@ public class Menu {
 		break;
 		
 	    case 6:
+		/* Ler Consoantes e imprimir */
+		System.out.println("\n3 - Ler Consoantes");
+		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||");
+
+		ArrayConsoantes caracteres = new ArrayConsoantes(10);
+		caracteres.setLetra('a');		    
+		caracteres.setLetra('b');		    
+		caracteres.setLetra('c');		    
+		caracteres.setLetra('d');		    
+		caracteres.setLetra('e');		    
+		caracteres.setLetra('f');		    
+		caracteres.setLetra('g');		    
+		caracteres.setLetra('h');		    
+		caracteres.setLetra('i');		    
+		caracteres.setLetra('j');		    
+		
+		caracteres.mostre();
+		break;
+
+	    case 7:
 		
 		Calculadora calc = new Calculadora();
 		int opc = 999;
