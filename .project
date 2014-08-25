@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/Exercicio1/Calculadora.java</name>
+			<type>1</type>
+			<location>/home/emiliano/inbox/code/java/Estacio/src/Exercicio1/Calculadora.java</location>
+		</link>
+	</linkedResources>
 </projectDescription>
