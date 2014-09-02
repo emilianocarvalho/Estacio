@@ -8,21 +8,24 @@ package ExercicioPOO;
 
 public class Agenda {
     protected Pessoa[] pessoa;
-    protected int tam;
+    int tam;
 
     public Agenda() {
-	this.tam = 0;
+	tam = 0;
     }
 
     public Agenda(int qtd) {
-	this.pessoa = new Pessoa[qtd];
+	pessoa = new Pessoa[qtd];
+	System.out.println("Pessoa criada tamanho: " + tam);
     }
 
     /* armazena a pessoa na agenda */
     public void armazenaPessoa(String nome, int idade, double altura) {
-	this.pessoa[tam].setNome(nome);
-	this.pessoa[tam].setIdade(idade);
-	this.pessoa[tam].setAltura(altura);
+	pessoa[tam] = new Pessoa();
+
+	pessoa[tam].setNome(nome);
+	pessoa[tam].setIdade(idade);
+	pessoa[tam].setAltura(altura);
 	tam++;
     }
 
@@ -50,13 +53,19 @@ public class Agenda {
     }
     /* imprime os dados de todas as pessoas da agenda */
     public void imprimeAgenda() {
+	System.out.println("\nAGENDA ||||||||||||||||||||");
 	for (Pessoa p : pessoa) {
 	    System.out.println("\nNome: " + p.nome + "\nIdade: " + p.idade + "\nAltura: " + p.altura);
 	}
     }
     /* imprime os dados da pessoa que está na posição “i” da agenda. */
     public void imprimePessoa(int index){
-	System.out.println("\nNome: " + pessoa[index].nome + "\nIdade: "
-		+ pessoa[index].idade + "\nAltura: " + pessoa[index].altura);	
+	System.out.println("\nIMPRIME PESSOA ||||||||||||");
+	if (index < pessoa.length) {
+	    System.out.println("\nNome: " + pessoa[index].nome + "\nIdade: "
+		    + pessoa[index].idade + "\nAltura: " + pessoa[index].altura);
+	} else {
+	    System.out.println("índice não encontrado!");
+	}
     }
 }

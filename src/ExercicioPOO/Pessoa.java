@@ -11,7 +11,7 @@ public class Pessoa {
     protected int idade;
     protected double altura;
     
-    public String getNome(String nome) {
+    public String getNome() {
 	return this.nome;
     }
     
@@ -22,9 +22,17 @@ public class Pessoa {
     public void setIdade(int idade) {
 	this.idade = idade;
     }
+
+    public int getIdade() {
+	return this.idade;
+    }
        
     public void setAltura(double altura) {
 	this.altura = altura;
+    }
+
+    public double getAltura() {
+	return this.altura;
     }
     
     public void getInfo() {

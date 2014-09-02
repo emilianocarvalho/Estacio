@@ -10,14 +10,14 @@ public class TestaAgenda {
 	p1.setAltura(1.82);
 	
 	Pessoa p2 = new Pessoa();
-	p2.setNome("Milao");
+	p2.setNome("Carvalho");
 	p2.setIdade(34);
 	p2.setAltura(1.82);
 
-	agenda.armazenaPessoa(p1.nome, p1.idade, p1.altura);
-	agenda.armazenaPessoa(p2.nome, p2.idade, p2.altura);
+	agenda.armazenaPessoa(p1.getNome(), p1.getIdade(), p1.getAltura());
+	agenda.armazenaPessoa(p2.getNome(), p2.getIdade(), p2.getAltura());
 	
-	agenda.imprimePessoa(1);
+	agenda.imprimePessoa(0);
 	agenda.imprimeAgenda();
     }
 
