@@ -1,7 +1,7 @@
 /**
  * Agenda
  *
- * @version v 0.1 Agosto/2014
+ * @version v 0.1 Setembro/2014
  * @author CARVALHO, Emiliano
  */
 package ExercicioPOO;
