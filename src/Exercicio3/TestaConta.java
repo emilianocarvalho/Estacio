@@ -2,7 +2,6 @@ package Exercicio3;
 
 public class TestaConta {
     public static void main(String[] args) {
-	// TODO Auto-generated method stub
 	Conta minhaconta;
 	minhaconta = new Conta();
 
@@ -14,7 +13,7 @@ public class TestaConta {
 	if (minhaconta.saca(1000)) {
 	    System.out.println("\nSaque realizado!");
 	} else {
-	    System.out.println("\nSaque nï¿½o realizado!");
+	    System.out.println("\nSaque não realizado!");
 	}
 
 	minhaconta.getInfo();
@@ -22,7 +21,7 @@ public class TestaConta {
 	if (minhaconta.saca(10000)) {
 	    System.out.println("\nSaque realizado!");
 	} else {
-	    System.out.println("\nSaque nï¿½o realizado!");
+	    System.out.println("\nSaque não realizado!");
 	}
 	minhaconta.getInfo();
     }	
