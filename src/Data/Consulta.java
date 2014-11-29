@@ -11,9 +11,9 @@ public class Consulta {
 		String comando = "Select * from cliente";
 		try {
 			Class.forName("net.sourceforge.jtds.jdbc.Driver");
-			String connString = "jdbc:jtds:sqlserver://localhost/SCP;user=sa;password=inttec01;instance=SQLSERVER2;";
+			String connString = "jdbc:jtds:sqlserver://localhost/SCP;user=sa;password=<password>;instance=SQLSERVER2;";
 	        String username = "sa";
-	        String password = "inttec01";
+	        String password = "<password>";
 
 	        Connection conn = DriverManager.getConnection(connString,username,password);			
 			System.out.println("Conectado OK");
@@ -29,7 +29,7 @@ public class Consulta {
 			System.out.println("Erro no SQL!");
 			return;
 		} catch(ClassNotFoundException e){
-			System.out.println("Driver n„o Encontrada!");
+			System.out.println("Driver n√£o Encontrada!");
 			return;
 		}
 		System.in.read();
