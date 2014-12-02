@@ -6,7 +6,7 @@ public class TestaAnimal {
 
 	public static void main(String[] args) {
 		
-		Collection colecao = new ArrayList();
+		Collection<Animal> colecao = new ArrayList<Animal>();
 		Scanner sc = new Scanner(System.in);
 		while (true) {
 			
